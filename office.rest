@@ -1,0 +1,14 @@
+# GET http://localhost:5050/office
+
+POST  http://localhost:5050/office
+Content-Type: "application/json"
+
+{
+    
+    "firstName":"amir",
+    "lastName":"mangisto",
+    "email":"mango@mango.com",
+    "age":27
+
+}
+

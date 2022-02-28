@@ -3,7 +3,7 @@ const officeCtr = require('../controller/office-controller')
 
 officeRouter.get('/',officeCtr.getAllOffice);
 officeRouter.get('/:id',officeCtr.getOfficeById)
-officeRouter.get('/',officeCtr.addOffice)
-officeRouter.get('/:id',officeCtr.updateOffice)
-officeRouter.get('/:id',officeCtr.deleteOffice)
+officeRouter.post('/',officeCtr.addOffice)
+officeRouter.put('/:id',officeCtr.updateOffice)
+officeRouter.delete('/:id',officeCtr.deleteOffice)
 module.exports = officeRouter;
