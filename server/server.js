@@ -6,12 +6,12 @@ const officeRouter = require('./router/office-router')
 const app=express();
 app.use(express.json())
 app.use(cors());
-const port = process.env.port;
+const port = process.env.PORT;
 app.listen(port);
-app.use('/office',officeRouter);
 app.use('/',(req,res)=>{
     res.send({message:"server is online"})
 })
+app.use('/office',officeRouter);
 
 
 
