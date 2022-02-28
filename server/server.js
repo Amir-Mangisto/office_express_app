@@ -8,9 +8,9 @@ app.use(express.json())
 app.use(cors());
 const port = process.env.PORT;
 app.listen(port);
-app.use('/',(req,res)=>{
-    res.send({message:"server is online"})
-})
+// app.use('/',(req,res)=>{
+//     res.send({message:"server is online"})
+// })
 app.use('/office',officeRouter);
 
 
