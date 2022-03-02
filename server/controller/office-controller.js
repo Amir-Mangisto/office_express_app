@@ -1,10 +1,9 @@
 const employees = require('../model/emploee-model');
 
-const getAllOffice =async (req,res)=>{
-   await employees.find((err,result)=>{
-        if(err) return res.status().send({message:err})
-        res.send(result);
-    }).clone();
+const getAllOffice = async (req,res)=>{
+   await employees.find()
+   .then(result => res.send(result))
+   .catch(err => res.send({message:err}));
 }
 const getOfficeById =async (req,res)=>{
   await employees.findById(req.params.id)
