@@ -7,7 +7,7 @@ function App() {
   const getAll = ()=>{
     getAllUSers()
     .then(user=>console.log(user))
-    .catch((err)=>{console.log(err);})
+    .catch((err)=>{console.log(err)})
 
   }  
   return (
